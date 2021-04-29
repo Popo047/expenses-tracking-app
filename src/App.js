@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./components/Expenses/Expenses";
+import NewExpenses from "./components/NewExpenses/NewExpenses";
 
 function App() {
   //Expenses array copied from a Udemy
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
       <Expenses expenses={expenses} />
+      <NewExpenses />
     </div>
   );
 }
