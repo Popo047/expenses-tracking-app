@@ -26,6 +26,11 @@ function App() {
     },
   ];
 
+  const addExpenses = (expense) => {
+    console.log("In App JS");
+    console.log(expense);
+  };
+
   //underthehoodcode
   // return React.createElement(
   //   "div",
@@ -36,7 +41,9 @@ function App() {
   return (
     <div>
       <Expenses expenses={expenses} />
-      <NewExpenses />
+      {/* the first "expenses" is to be used as a variable name (if direct) second one is the variable present in the file the object "expenses"  */}
+      <NewExpenses onAddExpense={addExpenses} />
+      {/* onAddExpense is a function pointer which is passed as an argument */}
     </div>
   );
 }
