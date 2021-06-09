@@ -1,4 +1,5 @@
 import React from "react";
+// import ExpenseFilter from "./components/Expenses/ExpenseFilter";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpenses from "./components/NewExpenses/NewExpenses";
 
@@ -40,10 +41,11 @@ function App() {
 
   return (
     <div>
-      <Expenses expenses={expenses} />
-      {/* the first "expenses" is to be used as a variable name (if direct) second one is the variable present in the file the object "expenses"  */}
       <NewExpenses onAddExpense={addExpenses} />
       {/* onAddExpense is a function pointer which is passed as an argument */}
+      {/* <ExpenseFilter /> */}
+      <Expenses expenses={expenses} />
+      {/* the first "expenses" is to be used as a variable name (if direct) second one is the variable present in the file the object "expenses"  */}
     </div>
   );
 }
